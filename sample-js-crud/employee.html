@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+  <title>Employee</title>
+</head>
+<body>
+     <form class="form-horizontal" id="form-edit-emp">
+      <fieldset>
+        <legend>Employee Form</legend>
+          <label for="emp-name">Name</label>  
+          <input id="emp-name" name="emp-name" type="text"><br><br>
+          <label for="emp-email">Email</label>
+          <input id="emp-email" name="emp-email" type="text"><br><br>
+		  <label for="emp-designation">Designation</label>
+          <input id="emp-designation" name="emp-designation" type="text"><br><br>
+		  <label for="emp-department">Department</label>
+          <select id="emp-department"><option disabled>Select On Option</option>
+		  <option value="Testing">Testing</option>
+		  <option value="Development">Development</option>
+		  <option value="Management">Management</option>
+		  </select><br><br>
+		   <label for="emp-mobileno">Mobile No</label>
+          <input id="emp-mobileno" name="emp-mobileno" type="number">
+      </fieldset>
+    </form>
+          <div id="saveupdate">
+            <button id="btn-save" name="btn-save" onclick="addemp()">Save</button>
+		  </div>
+		  <br>
+		  <fieldset>
+       <legend>List of Employee</legend>
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Department</th>
+			<th>Mobile</th>
+			<th>Designation</th>
+			<th>Actions</th>	
+          </tr>
+        </thead>
+        <tbody id="form-list-emp-body">
+        </tbody>
+      </table> 
+	  </fieldset>
+  <br>
+<script type="text/javascript" src="employee.js"></script>
+</body>
+</html>
